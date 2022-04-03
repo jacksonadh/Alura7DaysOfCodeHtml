@@ -87,6 +87,7 @@ li {
   color: var(--gray500);
   font: 500 16px 'Inter';
   line-height: 24px;
+  width: 80px;
 }
 
 .login {
@@ -148,6 +149,7 @@ li {
   color: var(--red);
   font: 600 16px 'Inter';
   line-height: 24px;
+  height: 407px;
 }
 
 
@@ -165,4 +167,36 @@ li {
   line-height: 30px;
   width: 790px;
   margin: 0;
+}
+
+.metricas-container {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 288px;
+}
+
+.metricas-container .card-metricas {
+  width: 280px;
+  height: 182px;
+  padding: 0 16px;
+}
+
+.metricas-container .card-metricas h2 {
+  color: var(--red);
+  font: 600 60px 'Inter';
+  line-height: 72px;
+}
+
+.metricas-container .card-metricas h3 {
+  color: var(--gray900);
+  font: 500 18px 'Inter';
+  line-height: 28px;
+}
+
+.metricas-container .card-metricas p {
+  color: var(--gray500);
+  font: 400 16px 'Inter';
+  line-height: 24px;
 }
