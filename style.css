@@ -282,3 +282,53 @@ li {
 .vagas .vagas-container .container-vagas-abertas .vaga .informacoes span {
   margin-left: 1.5rem;
 }
+
+.depoimentos {
+  margin: 0 auto;
+  height: 31.25rem;
+}
+
+.depoimentos .depoimento-container {
+  width: 76rem;
+  height: 25.25rem;
+  background: var(--red-opacity5);
+  margin: 2rem auto;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+.depoimentos .depoimento-container span {
+  font: 600 0.875rem 'Inter';
+  line-height: 1.25rem;
+  color: var(--red);
+  margin: 0;
+}
+
+.depoimentos .depoimento-container h2 {
+  font: 500 2.25rem 'Inter';
+  line-height: 2.75rem;
+  color: var(--gray900);
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.depoimentos .depoimento-container img {
+  margin: 1rem 0;
+}
+
+.depoimentos .depoimento-container .nome {
+  font: 500 1rem 'Inter';
+  line-height: 1.5rem;
+  color: var(--gray900);
+  margin: 0.25rem 0;
+}
+
+.depoimentos .depoimento-container p {
+  font: 500 0.875rem 'Inter';
+  line-height: 1.25rem;
+  color: var(--gray500);
+  margin: 0.25rem 0;
+}
