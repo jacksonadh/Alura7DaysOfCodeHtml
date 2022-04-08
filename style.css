@@ -39,7 +39,6 @@ textarea {
   font-family: 'Inter', sans-serif;
 }
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -47,37 +46,43 @@ nav {
   padding: 0.75rem 2rem;
 }
 
-.menuMobile.active {
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu.active {
   right: 0;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
 }
 
-.menuMobile .links ul {
+.menu .links ul {
   display: flex;
   gap: 1rem;
+  margin-left: 2rem;
 }
 
-.menuMobile .links ul li a {
+.menu .links ul li a {
   text-decoration: none;
   color: var(--gray500);
   font: 500 1rem 'Inter';
   flex-wrap: wrap;
 }
 
-.toglle-menu {
+.toggle-menu {
   display: none;
   visibility: hidden;
 }
 
-.menuMobile .login {
+.menu .login {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-
-.menuMobile .login a {
+.menu .login a {
   text-decoration: none;
   font: 500 1.125rem 'Inter';
   color: var(--gray);
@@ -112,13 +117,11 @@ button:hover {
   line-height: 1.5rem;
 }
 
-
 .sobre h1 {
   color: var(--gray900);
   font: 600 3rem 'Inter';
   margin: 1.5rem 0 2.25rem 0;
 }
-
 
 .sobre p {
   color: var(--gray500);
@@ -222,7 +225,6 @@ button:hover {
   margin: 1.5rem;
 }
 
-
 .depoimentos {
   margin: 0 auto;
 }
@@ -311,12 +313,12 @@ footer span {
 
 @media screen and (max-width: 768px) {
 
-  .toglle-menu {
+  .toggle-menu {
     display: initial;
     visibility: visible;
   }
 
-  .toglle-menu img {
+  .toggle-menu img {
     position: relative;
     z-index: 1;
     width: 24px;
@@ -324,7 +326,7 @@ footer span {
     cursor: pointer;
   }
 
-  .menuMobile {
+  .menu {
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -336,20 +338,60 @@ footer span {
     transition: all 2s;
   }
 
-  .menuMobile .links,
-  .menuMobile .login {
+  .menu .links,
+  .menu .login {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .menuMobile .links ul {
+  .menu .links ul {
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    margin: 0;
+    text-align: center;
+  }
+
+  .metricas-container {
+    max-width: 50rem;
+    text-align: center;
   }
 
   .depoimentos .depoimento-container h2 {
     font: 500 1.5rem 'Inter';
+  }
+
+  footer h2 {
+    font: 500 1.5rem 'Inter';
+  }
+
+  footer p {
+    font: 400 1rem 'Inter';
+    text-align: center;
+  }
+
+  footer input {
+    width: 15.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .depoimentos .depoimento-container span {
+    text-align: center;
+  }
+
+  .depoimentos .depoimento-container h2 {
+    font: 500 1rem 'Inter';
+  }
+
+  footer form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer span {
+    text-align: center;
   }
 }
