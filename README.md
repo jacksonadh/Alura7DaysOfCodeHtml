@@ -21,11 +21,11 @@ para quem quiser participar é só ir na página do [7daysofcode](https://7dayso
 
 ## Tecnologias usadas:
 
-HTML
-CSS
-Javascript (para o menu responsivo)
+- HTML
+- CSS
+- Javascript (para o menu responsivo)
 
-## Demostração do projeto
+## Demonstração  do projeto
 
 Github Pages: [clica aqui](https://jacksonadh.github.io/Alura7DaysOfCodeHtml/)
 
